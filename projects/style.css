@@ -53,7 +53,7 @@ header{
   box-shadow: 0 1px 4px rgba(146,161,176,.3);
 }
 section{
-  min-height: 100vh;
+  min-height: auto;
   padding: 2rem 9%;
 }
 .heading{
@@ -160,6 +160,7 @@ header .navbar ul li a:hover{
   /* background: #010124; */
   background: linear-gradient(to bottom, #010136, #00003a);
   margin-top: 5rem;
+  
 }
 .work h2{
   color: #fff;

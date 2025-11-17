@@ -76,6 +76,7 @@ header {
 section {
   min-height: 100vh;
   padding: 2rem 9%;
+  padding-top: 8rem;
 }
 .heading {
   font-size: 3.5rem;
@@ -309,17 +310,17 @@ header .navbar ul li a:hover {
 .social-icons a.github:hover {
   background-color: #0e0e0e;
 }
-.social-icons a.twitter:hover {
-  background-color: #00aced;
+.social-icons a.facebook:hover {
+  background-color: #1e4ede;
 }
-.social-icons a.linkedin:hover {
-  background-color: #007bb6;
+.social-icons a.tele:hover {
+  background-color: #2ccbe7;
 }
-.social-icons a.dev:hover {
-  background-color: #070707;
+.social-icons a.discord:hover {
+  background-color: #6801c9;
 }
 .social-icons a.instagram:hover {
-  background-color: #ee00da;
+  background-color: #eb22e8;
 }
 /* social icons end */
 
@@ -414,8 +415,8 @@ header .navbar ul li a:hover {
   border-radius: 0.5em;
   transition: 0.3s;
   color: #fff;
-  background: #2506ad;
-  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  background: #049e23;
+  box-shadow: 0px 5px 10px rgba(11, 173, 130, 0.6);
   font-family: "Nunito", sans-serif;
 }
 .resumebtn .btn span {
@@ -429,7 +430,7 @@ header .navbar ul li a:hover {
   transition: 0.3s;
 }
 .resumebtn .btn:hover {
-  background: #1a047e;
+  background: #035a2d;
 }
 .resumebtn .btn:hover i {
   transform: translateX(5px);
@@ -480,8 +481,7 @@ header .navbar ul li a:hover {
 }
 .skills .container .row {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 1.8rem;
 }
 .skills .container .bar {
@@ -535,7 +535,11 @@ header .navbar ul li a:hover {
 /* education section starts */
 .education {
   background: #e5ecfb;
-  min-height: 80vh;
+  min-height: 60vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
 }
 .education .qoute {
   font-size: 1.5rem;
@@ -546,10 +550,9 @@ header .navbar ul li a:hover {
 }
 .education .box-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+  flex-direction: column;  
 }
 .education .box-container .box {
   display: flex;
@@ -643,6 +646,7 @@ header .navbar ul li a:hover {
 .work {
   /* background: #010124; */
   background: linear-gradient(to bottom, #000031, #00002c);
+  min-height: 70vh;
 }
 .work h2 {
   color: #fff;
@@ -790,7 +794,7 @@ header .navbar ul li a:hover {
   height: 25px;
   right: -17px;
   background-color: rgb(255, 255, 255);
-  border: 4px solid #ff9f55;
+  border: 4px solid #f1a7c3;
   top: 15px;
   border-radius: 50%;
   z-index: 100;
@@ -815,9 +819,9 @@ header .navbar ul li a:hover {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid #f68c09;
+  border: medium solid #f1a7c3;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #f68c09;
+  border-color: transparent transparent transparent #f1a7c3;
 }
 /* arrows pointing left  */
 .experience .right::before {
@@ -828,15 +832,15 @@ header .navbar ul li a:hover {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid #f68c09;
+  border: medium solid #f1a7c3;
   border-width: 10px 10px 10px 0;
-  border-color: transparent #f68c09 transparent transparent;
+  border-color: transparent #f1a7c3 transparent transparent;
 }
 .experience .right::after {
   left: -16px;
 }
 .experience .content {
-  background-color: #f68c09;
+  background-color: #f1a7c3;
   position: relative;
   border-radius: 6px;
 }
@@ -910,9 +914,9 @@ header .navbar ul li a:hover {
   }
   .experience .container::before {
     left: 61px;
-    border: medium solid #f68c09;
+    border: medium solid #f1a7c3;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #f68c09 transparent transparent;
+    border-color: transparent #f1a7c3 transparent transparent;
   }
   .experience .left::after {
     left: 15px;
